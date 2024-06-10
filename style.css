@@ -1,0 +1,254 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #000000;
+}
+
+/* nav bar */
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+}
+
+ul.navItems {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+    display: flex;
+    height: 100%;
+}
+  
+li.navItem {
+    float: left;
+    text-align: center;
+    height: 100%;
+}
+
+a.linkPage {
+    height: 100%;
+}
+
+li.navItem a.linkPage {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.navItem a.linkPage:hover {
+    background-color: #222;
+}
+
+li.navItem.active a.linkPage {
+    background: -webkit-linear-gradient(45deg, #4ee379, #8057e0);
+    font-weight: 800;
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+    transition: background 1s ease;
+}
+
+li.navItem.active a.linkPage:hover {
+    background: -webkit-linear-gradient(45deg, #4ee379, #8057e0);
+    -webkit-background-clip: none;
+    background-clip: none;
+    -webkit-text-fill-color: white;
+    color: white;
+}
+
+img.logoImg {
+    height: 50px;
+    aspect-ratio: 1;
+}
+
+div.logo {
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* landing */
+h1.indexTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+}
+
+h3.indexSubtitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+section {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(infinity.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    background: linear-gradient(135deg, #4ee379, #8057e0);
+    display: flex;
+    justify-content: center;
+}
+
+/* form */
+form {
+    margin: 50px 0;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    align-items: center;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    background: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.agreeContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    color: black;
+    font-weight: 600;
+}
+
+label {
+    display: block;
+    color: black;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+input[type="range"] {
+    width: 70%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: black;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+input[type="range"]::-moz-range-track {
+    background: black;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    margin-top: -0.25rem; 
+    background-color: white;
+    height: 1rem;
+    width: 1rem;    
+    border-radius: 50%;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+    border: 1px solid #000;
+    outline: 3px solid #000;
+    outline-offset: 0.125rem; 
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+    border: 1px solid #000;
+    outline: 3px solid #000;
+    outline-offset: 0.125rem; 
+}
+
+input[type="range"]::-moz-range-thumb {
+    border: none; 
+    border-radius: 50%; 
+    background-color: #4ee379;
+    height: 1rem;
+    width: 1rem;
+}
+
+input[type="submit"] {
+    background: black;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.negative {
+    transform: rotateY(180deg);
+}
+
+/* results */
+/* #chart {
+    width: 300px;
+    height: 300px;
+} */
+
+.chart {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 500px;
+    padding: 20px;
+    background: rgba(143, 238, 224, 0.333);
+    border-radius: 1rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.container {
+    background: linear-gradient(#4ee379, #8057e0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
