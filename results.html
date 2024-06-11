@@ -25,12 +25,12 @@
     </div>
 
     <script>
-        const anxiety = localStorage.getItem('anxiety');
-        const aggression = localStorage.getItem('aggression');
-        const abnormal = localStorage.getItem('abnormal');
-        const fixation = localStorage.getItem('fixation');
-        const hypersensitivity = localStorage.getItem('hypersensitivity');
-        const depression = localStorage.getItem('depression');
+        const anxiety = localStorage.getItem('anxiety') / 6;
+        const aggression = localStorage.getItem('aggression') / 6;
+        const abnormal = localStorage.getItem('abnormal') / 6;
+        const fixation = localStorage.getItem('fixation') / 6;
+        const hypersensitivity = localStorage.getItem('hypersensitivity') / 6;
+        const depression = localStorage.getItem('depression') / 6;
 
         let c = document.getElementById('chart');
         let chart = c.getContext('2d');
